@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Pocket Wallet</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="monney_array">
+
+        <item>৳</item>
+        <item>$</item>
+        <item>€</item>
+        <item>£</item>
+        <item>¥</item>
+        <item>₣</item>
+        <item>₹</item>
+        <item>د.ك</item>৳
+        <item>₻</item>
+
+    </string-array>
+
+    <string-array name="payment_array">
+
+        <item>Cash</item>
+        <item>Credit Card</item>
+        <item>Debit Card</item>
+        <item>Visa Card</item>
+        <item>Master Card</item>
+
+    </string-array>
+
+
+</resources>

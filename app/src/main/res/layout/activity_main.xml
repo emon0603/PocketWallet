@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/main_dash_back"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL BALANCE"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:fontFamily="@font/english"
+                />
+
+            <TextView
+                android:id="@+id/totalbalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#A5A5A5"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/circulerlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/round_back"
+                    android:layout_centerInParent="true"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expenses"
+                        android:textColor="@color/card1"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+                <com.seosh817.circularseekbar.CircularSeekBar
+                    android:id="@+id/circular_seek_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:circularSeekBar_animation="normal"
+                    app:circularSeekBar_animationDurationMillis="1000"
+                    app:circularSeekBar_barStrokeCap="butt"
+                    app:circularSeekBar_barWidth="8dp"
+                    app:circularSeekBar_innerThumbRadius="0dp"
+                    app:circularSeekBar_innerThumbStrokeWidth="0dp"
+                    app:circularSeekBar_min="0"
+                    app:circularSeekBar_outerThumbRadius="0dp"
+                    app:circularSeekBar_outerThumbStrokeWidth="10dp"
+                    app:circularSeekBar_startAngle="180"
+                    app:circularSeekBar_dashWidth="1"
+                    app:circularSeekBar_dashGap="3"
+                    app:circularSeekBar_sweepAngle="360"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerInParent="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_below="@+id/circulerlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:listSelector="#00000000"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+
+
+
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

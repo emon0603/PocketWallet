@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+ <com.google.android.material.card.MaterialCardView
+     android:id="@+id/cardview"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     app:cardCornerRadius="20dp"
+     android:layout_margin="15dp"
+     android:clickable="false"
+     android:listSelector="#00000000"
+     android:focusableInTouchMode="false"
+
+     >
+
+  <LinearLayout
+      android:layout_width="130dp"
+      android:layout_height="130dp"
+      android:orientation="vertical"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:layout_margin="10dp"
+
+      >
+
+   <ImageView
+       android:id="@+id/icontv"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:src="@drawable/income"
+       android:padding="20dp"
+       android:layout_gravity="center"
+
+
+       />
+
+   <TextView
+       android:id="@+id/titletv"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Add Income"
+       android:textSize="17sp"
+       android:fontFamily="@font/kalpurush"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:textColor="@color/white"
+       android:textStyle="bold"
+       />
+
+
+  </LinearLayout>
+
+
+ </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</LinearLayout>
